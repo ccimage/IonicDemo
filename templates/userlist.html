@@ -1,0 +1,15 @@
+<ion-view view-title="这些用户也在玩">
+  <ion-content>
+    <ion-list>
+        <ion-item menu-close ng-repeat="people in userlist" class="item item-complex">
+          <a class="item-content item-user {{(people.gender == 1 && 'item-user-male') || 'item-user-female'}}" href="#/app/chat/{{people.id}}">{{people.nickname}}
+            
+            <span class="distance-max">{{people.city}} {{people.dist}}</span>
+          </a> 
+          <!--<i class="{{(people.gender == 1 && 'ion-male') || 'ion-female'}} icon-subfix">    &nbsp;{{people.age}}岁</i>-->
+          <a class="button-normal buttongray button-small button-right" ng-show="!people.isfriend" ng-click="like({{people.id}})"><i class="ion-heart"></i></a>   
+          <a class="button-right" ng-show="people.isfriend" style="top:20px;">已关注</a>
+        </ion-item>
+      </ion-list>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,108 @@
+/* Empty. Add your own CSS if you like */
+ion-view.pane{background-color: #2D3335;}
+.item{border:0px;background-color: transparent;}
+.item-body,.card{background-color:#2E3739;color:gray;}
+.item-divider{background-color: #2D3335;color:white}
+.item-divider h2{color: white; font-weight: 600;font-size: 1.2em;}
+.item-divider h2 span{color: lightgray; font-weight: 400;font-size: 1.0em;}
+/**********/
+.nav-bar-block[nav-bar="active"]{background:transparent url(../img/title_background_slice.png) 0 bottom repeat-x;height:76px;}
+.bar.bar-stable{background:#2C2C2C;color:lightgray;}
+.icon-profile{height:53px;}
+#title-user-name{text-align: left;
+    float: right;
+    line-height: 20px;
+    font-weight: 400;
+    padding-left: 12px;
+    padding-top: 6px;}
+#title-left-button{float:left;}
+#title-left-button img{height:53px;}
+#title-left-button{
+    width:53px;height:53px;
+    background:url(../img/title_profile_back.png) no-repeat;
+}
+ion-view.pane{top:24px;}
+/*.has-header{top:0;}*/
+.bar-stable .button.button-clear{color:#b2b2b2;}
+/**********/
+.list table td{vertical-align: top;}
+td .item-image{padding: 4px;}
+.gamedetailimage{padding:5px;height:115px;}
+.panelpart{color:#EDEDED;}
+.gamelogo{height:86px;width:55%;}
+.gamename{width:45%;}
+.gamepanel1{height:125px;background-color: #2D3335;}
+.panelpart{float:left;}
+.button-normal{width:137px;height:48px;display: block;text-align: center;line-height:48px;font-size: 1.2em;font-weight:700;text-decoration:none;color:#EDEDED;}
+.button-normal.activated{color:darkblue;}
+.buttonblue{background: url(../img/button-normal-2.png) no-repeat;}
+.buttongray{background: url(../img/button-normal-1.png) no-repeat;}
+.button-small{width:76px;height:35px;line-height: 35px;font-size:1.1em;}
+.button-right{position: absolute;right: 20px;z-index: 100;top: 8px;}
+.item-gamedesc{max-height: 100px;}
+.item-complex .item-content,.item .item-content{background-color:#2C2C2C;color:lightgray;margin: 1px 10px;}
+.item label.item-content{display: block;position: relative; z-index: 2; padding: 16px 49px 16px 16px;}
+.item-bottom .item-content{border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; margin-bottom:6px;}
+.item-top .item-content{border-top-left-radius: 8px; border-top-right-radius: 8px;}
+ion-content,.list{background-color: #2E3739}
+.item .item-content.activated{background-color:#000;}
+.item-profile .item-content{height: 62px; line-height: 32px;}
+.item-blank .item-content{background: transparent;}
+.item-profile img{position: absolute; top:4px;right:60px;}
+.item-content i{position: absolute;right: 12px;}
+.item-content span{position: absolute;right: 60px;color:#849092}
+.item-content span.distance{right: 20px; font-size: 12px;}
+.item-content span.distance-max{right: 90px; font-size: 12px;}
+.item-static{padding:0; }
+.item-static .item-content{font-size:16px;}
+.item-desc .item-content{font-size:0.9em; color:#aaa}
+.item-complex .item-user{background: #2C2C2C url(../img/title_profile_none.png) no-repeat; padding-left: 56px;}
+.item-complex .item-user.item-user-male{background: #2C2C2C url(../img/profile-male.png) no-repeat; }
+.item-complex .item-user.item-user-female{background: #2C2C2C url(../img/profile-female.png) no-repeat; }
+#title-hello-button{line-height: 30px; text-align: center;position: absolute;right:30px}
+#title-hello-button span{font-size:0.8em;}
+.bar-popup{background: #2D3335;}
+/*********/
+.card.chatcard{box-shadow: none; background-color: transparent;}
+.chatleft .chat{float:left;}
+.chatright .chat{float:right;}
+.chat-profile{margin-right:10px;margin-left:10px;}
+.chat-profile img{width:64px;height:64px;}
+ .chat-left-l{width:14px;height:36px;}
+ .chat-left-m{width:auto;padding:8px;white-space: normal;border-radius: 6px;}
+.chatleft .chat-left-l{background:url(../img/chat-left-normal.png)left center no-repeat;}
+.chatleft .chat-left-m{background-color:white;}
+
+.chatleft .chat-text{position: absolute;left: 120px;top: 64px;}
+.chatright .chat-text{position: absolute;right: 120px;top: 64px;}
+
+.chatright .chat-left-m{background-color:#527FAA; color:white;}
+.chatright .chat-left-l{background:url(../img/chat-right-normal.png)right center no-repeat;}
+.chatleft .chat-profile span{position: absolute;left: 120px;top: 40px;}
+.chatright .chat-profile span{position: absolute;right: 120px;top: 40px;}
+.gender-modal{padding:20px; min-height:240px;}
+.gender-male{float:right;width:45%;}
+.gender-female{float:left;width:45%;}
+.gender img{width:100%;}
+
+.item-error{background: lightyellow; color: red;}
+.bar-float{position: absolute;width: 100%;left:0;line-height: 200%;}
+.bar-float-top{top:0;}
+.bar-float-bottom{bottom:0;}
+.bar-float-thick{line-height: 50px; height:60px;}
+/***hacker of ionic css***/
+.bar.bar-header h1, .bar.bar-stable .title{color:lightgray;}
+
+a{color:lightgray; text-decoration: none;}
+.item-input{background: #EDEDED;margin-bottom: 4px;}
+.item-radio input:checked ~ .item-content {
+    background: #11c1f3;color: white;
+}
+.item-radio input:checked ~ .radio-icon{color:white;}
+.item-input{background: #2C2C2C; }
+.item-input .input-label{color:lightgray;}
+.item-input input[type='text'],.item-input input[type='password']{color:white;}
+.item-radio .item-content{background: #2E3739}
+.item-radio{margin-bottom: 4px;}
+i.icon-subfix{position: absolute; top: 32px; left: 70px;z-index: 100;color: #aaa;font-size: 11px;}
+i.new-msg-notify{font-size: 0.6em;position: absolute;top: 0px;right: 0px;color: #e42012;}

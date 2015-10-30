@@ -1,0 +1,38 @@
+<ion-view view-title="">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="gamelist in gamelists">
+        <table cellspacing=4>
+        <tr><td rowspan="2">
+          <div class="item item-image">
+          <a href="#/app/gamelists/{{gamelist[0].id}}"><img ng-src="{{server}}{{gamelist[0].images[1].img || nopich}}"></a>
+        </div>
+        </td><td colspan="2">
+          <div class="item item-image">
+          <a href="#/app/gamelists/{{gamelist[1].id}}"><img ng-src="{{server}}{{gamelist[1].images[0].img || nopicw}}"></a>
+        </div>
+        </td></tr>
+        <tr><td rowspan="2">
+          <div class="item item-image">
+          <a href="#/app/gamelists/{{gamelist[2].id}}"><img ng-src="{{server}}{{gamelist[2].images[1].img || nopich}}"></a>
+        </div>
+        </td><td rowspan="2">
+          <div class="item item-image">
+          <a href="#/app/gamelists/{{gamelist[3].id}}"><img ng-src="{{server}}{{gamelist[3].images[1].img || nopich}}"></a>
+        </div>
+        </td></tr>
+        <tr><td rowspan="2" style="vertical-align:bottom">
+          <div class="item item-image">
+          <a href="#/app/gamelists/{{gamelist[4].id}}"><img ng-src="{{server}}{{gamelist[4].images[1].img || nopich}}"></a>
+        </div>
+        </td></tr>
+        <tr><td colspan="2">
+          <div class="item item-image">
+          <a href="#/app/gamelists/{{gamelist[5].id}}"><img ng-src="{{server}}{{gamelist[5].images[0].img || nopicw}}"></a>
+        </div>
+        </td></tr>
+        </table>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

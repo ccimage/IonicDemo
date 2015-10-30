@@ -1,0 +1,27 @@
+<ion-view view-title="">
+  <ion-content>
+    <ion-list>
+        <ion-item ng-repeat="chatcontent in chathistory">
+          <div class="card chatcard {{chatcontent['direction']}}">
+            <div class="chat chat-profile">
+              <img src="img/chat-profile.png" alt="" />
+              <span>{{chatcontent.nickname}}</span> 
+            </div>
+            <div class="chat chat-text">
+              <div class="chat chat-left-l">&nbsp;</div>
+              <div class="chat chat-left-m">{{chatcontent.msg}}</div>
+            </div>
+          </div>
+        </ion-item>
+    </ion-list>
+    <div style="position: absolute;bottom: 0;width: 100%;">
+      <div class="item-static">
+          <p class="item-input">
+          <input type="text" id="txtMyMsg">
+          <span><a class="button-normal buttonblue" href="javascript:void(0)" ng-click="sendMsg()">发送</a></span>
+          </p>
+        </div>
+    </div>
+
+  </ion-content>
+</ion-view>

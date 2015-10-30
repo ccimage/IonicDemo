@@ -1,0 +1,75 @@
+<ion-view view-title="修改个人资料">
+  <ion-content>
+    <ion-list>
+        <ion-item class="item-blank">
+          &nbsp;
+        </ion-item>
+        <ion-item class="item-static">
+          <label class="item-input"><span class="input-label">用户名</span> 
+          <input type="text" name="username" ng-model="user.username" required>
+          </label>
+        </ion-item>
+        <ion-item class="item-static">
+          <label class="item-input"><span class="input-label">密码(不改请留空)</span> 
+          <input type="password" name="password" ng-model="password.pwd" required>
+          </label>
+        </ion-item>
+        <ion-item class="item-static">
+          <label class="item-input"><span class="input-label">重复密码</span> 
+          <input type="password" name="password2" ng-model="password.pwd2" required>
+          </label>
+        </ion-item>
+        <ion-item class="item-static">
+          <label class="item-input"><span class="input-label">昵称</span>
+          <input type="text" name="nickname" ng-model="user.nickname" required>
+          </label>
+        </ion-item>
+        <ion-item class="item-static">
+          <label class="item-input"><span class="input-label">性别</span>
+          </label>
+          <label class="item item-radio">
+            <input type="radio" name="gender" value="0" ng-model="user.gender">
+            <div class="item-content">
+              女
+            </div>
+            <i class="radio-icon ion-checkmark"></i>
+          </label>
+          <label class="item item-radio">
+            <input type="radio" name="gender" value="1" ng-model="user.gender">
+            <div class="item-content">
+              男
+            </div>
+            <i class="radio-icon ion-checkmark"></i>
+          </label>
+          
+        </ion-item>
+        <ion-item class="item-static">
+          <label class="item-input"><span class="input-label">年龄</span>
+          <input type="text" name="age" ng-model="user.age" required>
+          </label>
+        </ion-item>
+        
+        <ion-item class="item-static">
+          <label class="item-input"><span class="input-label">个性签名</span>
+          </label>
+        </ion-item>
+        <ion-item class="item-static item-bottom item-desc">
+             <label class="item-input">
+               <input type="text" name="desc" ng-model="user.descself">
+             </label>
+        </ion-item>
+        <button class="button button-block button-positive" ng-click="updateUser();" ng-disabled="buttonState.updateuser">
+          保存
+        </button>
+    </ion-list>
+    <div class="bar bar-float bar-float-bottom bar-assertive" ng-show="error.visible">
+      <i class="ion-alert-circled">
+        &nbsp;
+      </i>
+      <span>{{error.msg}}</span>
+      <i class="ion-close-circled" style="right:0;position:absolute;" ng-click="closeError();">
+        &nbsp;
+      </i>
+    </div>
+  </ion-content>
+</ion-view>

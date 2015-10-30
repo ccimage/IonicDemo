@@ -1,0 +1,48 @@
+<ion-view view-title="{{gametitle}}">
+  <ion-content>
+    <div class="gamepanel1">
+      <div class="panelpart gamelogo"><img class="gamedetailimage" ng-src="{{server}}{{data.icon}}" alt="" /></div>
+      <div class="panelpart gamename"><ul><li style="font-size:1.3em;">{{data.name}}</li>
+      <li style="font-size:0.9em;color:gray">{{data.tag}}</li> 
+      <li>&nbsp;</li>
+      <li><a class="button-normal buttonblue" id="gameweblink" ng-href="#app/gameplay/{{data.id}}" ng-show="canStart">开始游戏</a></li></ul></div> 
+    </div>
+    
+    <div class="list card">
+      <div class="item item-divider">
+        <h2>详情 <span>/ 内容提要</span></h2>
+      </div>
+      <div class="item item-body">
+        <div class="item-gamedesc"> {{data.desc}} </div>
+      </div> 
+    </div>
+    <div class="list card">
+      <div class="item item-divider">
+        <h2>推荐 <span>/ 交流社区</span></h2>
+      </div>
+      <div class="item item-body">
+        <div class="item-gamedesc"> {{playerStr}}</div>
+        <div>
+          <a class="button-normal buttongray" id="gameplayerlink" ng-href="#app/userlist/{{gameid}}" style="float:right" ng-show="havePlayer">加入</a></div>
+      </div> 
+    </div>
+    <div class="bar bar-float bar-float-bottom bar-stable bar-float-thick" ng-show="LBSvisible">
+        <div id="title-left-button">
+          <img ng-src="img/{{(people.gender == 1 && 'profile-male.png') || 'profile-female.png'}}" alt="" />
+        </div>
+        <div id="title-user-name">
+        <font size="3.5em" color="lightgray">{{LBS.nickname}} {{(people.gender == 1 && '男') || '女'}}</font>
+        <br />
+        <font size="2.4em" color="gray">{{LBS.city}} 距离{{LBS.dist}}米</font>
+        </div>
+        <div id="title-hello-button">
+          <a class="button-normal buttongray button-small" href="javascript:void(0)" ng-click="like('{{LBS.id}}');"><i class="ion-heart"></i></a>
+          <span>+20积分</span>
+        </div>
+        <i class="ion-close-circled" style="right:0;position:absolute;" ng-click="closeLBS();">
+          &nbsp;
+        </i>
+    </div>
+  </ion-content>
+
+</ion-view>
